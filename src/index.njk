@@ -98,8 +98,8 @@ layout: "base.njk"
           <p class="card-desc">{{ event.data.highlight }}</p>
 
           <div class="card-image">
-            {% if event.data.img %}
-              <img src="{{ event.data.img }}" alt="{{ event.data.month }}" loading="lazy">
+            {% if event.data.image %}
+              <img src="{{ event.data.image }}" alt="{{ event.data.caption }}" loading="lazy">
             {% else %}
               <svg width="52" height="52" viewBox="0 0 52 52" style="opacity:0.4;">
                 <path d="M26 46C26 46 4 32 4 16C4 9.37 9.37 4 16 4C19.9 4 23.3 5.97 26 9.03C28.7 5.97 32.1 4 36 4C42.63 4 48 9.37 48 16C48 32 26 46 26 46Z" fill="#E8A0B0"/>

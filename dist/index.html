@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Beautiful Timeline</title>
   <link rel="stylesheet" href="/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,500;1,400&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
   
@@ -108,7 +109,7 @@
 
           <div class="card-image">
             
-              <img src="/assets/event/03.jpg" alt="February" loading="lazy">
+              <img src="/assets/event/03.jpg" alt="Uneventful February" loading="lazy">
             
           </div>
 
@@ -129,11 +130,11 @@
 
           <div class="card-divider"></div>
 
-          <p class="card-desc">Our 2026 got off to a sad start.  While still mourning the loss of our cat Lily, we had the bigger blow of the passing of Eric&#39;s dad Dan.   I made a page of memories of him that helped me to process it.  I also have a page for the other things that happened this month.</p>
+          <p class="card-desc">Our 2026 got off to a sad start. While still mourning the loss of our cat Lily, we had the bigger blow of the passing of Eric&#39;s dad Dan. I made a page of memories of him that helped me to process it. I also have a page for the other things that happened this month.</p>
 
           <div class="card-image">
             
-              <img src="/assets/event/02.jpg" alt="January" loading="lazy">
+              <img src="/assets/event/02.jpg" alt="Sadness and healing" loading="lazy">
             
           </div>
 
@@ -154,11 +155,11 @@
 
           <div class="card-divider"></div>
 
-          <p class="card-desc">This month was full of Christmas activities, a short trip into Canada, and a longer trip for Shawnna to Oklahoma.  Unfortunately, it was also a sad month which included the loss of our cat Lily.  When I made a web page of memories of her, I realized I hadn&#39;t made one for sweet Feisty who died in 2024, so I made her a memory page too.</p>
+          <p class="card-desc">This month was full of Christmas activities, a short trip into Canada, and a longer trip for Shawnna to Oklahoma. Unfortunately, it was also a sad month which included the loss of our cat Lily. When I made a web page of memories of her, I realized I hadn&#39;t made one for sweet Feisty who died in 2024, so I made her a memory page too.</p>
 
           <div class="card-image">
             
-              <img src="/assets/event/11.jpg" alt="December" loading="lazy">
+              <img src="/assets/event/11.jpg" alt="Month full of Christmas activities" loading="lazy">
             
           </div>
 
@@ -280,5 +281,17 @@ renderTimeline();
   <p class="footer-sig">— with all my love ♡</p>
 </footer>
 
+
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>
