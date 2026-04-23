@@ -11,8 +11,7 @@ collections:
     slug: "{{year}}-{{month}}-{{slug}}"
     fields:
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Month", name: "month", widget: "string" }
       - { label: "Highlight", name: "highlight", widget: "markdown"}
-      - { label: "Tags", name: "tags", widget: "list" , defaiult: ["event"] }
+      - { label: "Tags", name: "tags", widget: "list" , default: ["event"] }
       - { label: "Featured image", name: "image", widget: "image" }
       - { label: "Image caption", name: "caption", widget: "string" }
